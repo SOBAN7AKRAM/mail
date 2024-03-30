@@ -1,0 +1,67 @@
+$blue : #007BFF;
+textarea {
+    min-height: 400px;
+}
+.emailContainer{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: space-between;
+    border: 1px solid $blue;
+    border-bottom: none;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    &:last-child{
+        border-bottom: 1px solid $blue;
+    }
+}
+.emailContainer:hover{
+    cursor: pointer;
+    box-shadow: 0rem 0rem 1rem grey;
+}
+.timeStamp{
+    font-weight: 400;
+}
+.subContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.unread{
+    background-color: rgb(162, 160, 160);
+    color: white;
+}
+.imgContainer{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.imgContainer:hover{
+    background-color: rgb(71, 67, 67);
+}
+.imgContainer::before{
+    background: url('./Pictures/archive.png') no-repeat center center/cover;
+    position: absolute;
+    content: '';
+    margin: 0;
+    padding: 0;
+    height: 18px;
+    width: 20px;
+    top: 23%;
+    left: 20%;
+}
+
+
+.divContainer{
+    div{
+        span{
+            font-weight: 500;
+        }
+    }
+    p{
+        border-top: 1px solid grey;
+        margin-top: 2rem;
+    }
+}
